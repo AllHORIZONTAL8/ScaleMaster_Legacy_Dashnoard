@@ -1,0 +1,26 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - browserify > glob > minimatch:
+        patched: '2025-01-05T05:46:38.702Z'
+        id: 'npm:minimatch:20160620'
+        path: browserify > glob > minimatch
+    - grunt-browserify > glob > minimatch:
+        patched: '2025-01-05T05:46:38.702Z'
+        id: 'npm:minimatch:20160620'
+        path: grunt-browserify > glob > minimatch
+    - grunt-browserify > watchify > browserify > glob > minimatch:
+        patched: '2025-01-05T05:46:38.702Z'
+        id: 'npm:minimatch:20160620'
+        path: grunt-browserify > watchify > browserify > glob > minimatch
+    - grunt > glob > minimatch:
+        patched: '2025-01-05T05:46:38.702Z'
+        id: 'npm:minimatch:20160620'
+        path: grunt > glob > minimatch
+    - grunt-contrib-watch > gaze > globule > glob > minimatch:
+        patched: '2025-01-05T05:46:38.702Z'
+        id: 'npm:minimatch:20160620'
+        path: grunt-contrib-watch > gaze > globule > glob > minimatch
